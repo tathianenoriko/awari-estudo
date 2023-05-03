@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #9c9c9c;
+  background-color: #111111;
+  height: 60px;
+  font-size: 18px;
+}
+
+.item1 {
+  align-self: center;
+  margin-left: 80px;
+}
+.item2 {
+  place-self: center end;
+  margin-right: 80px;
+}
+
+main {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.form-title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.form-input-group {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.buttom {
+  background-color: #febe01;
+  color: #332200;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.buttom:hover {
+  background-color: #e9af04;
+}
+
+.form-input-group input[type="text"],
+.form-input-group input[type="email"],
+.form-input-group textarea {
+  border: 1px solid;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input-group input[type="text"]:focus,
+.form-input-group input[type="email"]:focus,
+.form-input-group textarea:focus {
+  outline: none;
+  border-color: #febe01;
+  border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <p class="item1">Awari - Prática 03</p>
+      <p class="item2">Programação Front End</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-wrapper">
+      <h2 class="form-title">Formulário de Contato</h2>
+      <form id="contact-form">
+        <div class="form-input-group">
+          <label for="name">Nome</label><br>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required><br>
+        </div>
+        <div class="form-input-group">
+          <label for="email">E-mail</label><br>
+          <input type="email" id="email" name="email" placeholder="contato@email.com" required><br>
+        </div>
+        <div class="form-input-group">
+          <label for="message">Mensagem</label><br>
+          <textarea name="message" id="message" cols="42" rows="8" placeholder="Sua mensagem aqui" required></textarea><br>
+        </div>
+        <input class="buttom" type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+
+</html>
