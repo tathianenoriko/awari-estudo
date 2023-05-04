@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #f4dfce;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  align-items: center;
+  background-color: #e37e84;
+  display: flex;
+  color: #7e3439;
+  justify-content: center;
+  padding: 10px 10px;
+  box-shadow: rgb(162, 70, 73) 0px 1px 5px;
+  margin-bottom: 20px;
+}
+
+.article {
+  color: #404040;
+  background-color: #eeedeb;
+  margin: 10px 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.article-title {
+  margin-bottom: 5px;
+}
