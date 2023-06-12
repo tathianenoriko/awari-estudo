@@ -1,6 +1,6 @@
-## Lista de Usuários
+# Lista de Usuários
 
-# Prática
+## Prática
 
 - criar uma nova aplicação React.js;
 - criar um componente responsável por exibir as informações sobre usuários na aplicação (item);
