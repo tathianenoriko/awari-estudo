@@ -1,20 +1,28 @@
+import { useCallback, useMemo } from "react";
 import Item from "../Item";
 
-function List({ items = [], onItemClick }) {
-  const handleItemClick = (item) => {
-    onItemClick && onItemClick(item);
-  };
+const List = ({ items = [], onItemClick }) => {
+  const handleItemClick = useCallback(
+    (item) => {
+      onItemClick && onItemClick(item);
+    },
+    [onItemClick]
+  );
 
-  const map = items.map((item) => {
-    return <Item key={item.id} item={item} onItemClick={handleItemClick} />;
-  });
+  const map = useMemo(
+    () =>
+      items.map((item) => {
+        return <Item key={item.id} item={item} onItemClick={handleItemClick} />;
+      }),
+    [items, handleItemClick]
+  );
 
   return (
-    <div className="title">
+    <div>
       <h2>Lista de Usuários</h2>
       <ul>{map}</ul>
     </div>
   );
-}
+};
 
 export default List;

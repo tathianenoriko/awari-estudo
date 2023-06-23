@@ -1,7 +1,9 @@
-function Item({ item, onItemClick }) {
-  const handleClick = () => {
+import { useCallback } from "react";
+
+const Item = ({ item, onItemClick }) => {
+  const handleClick = useCallback(() => {
     onItemClick && onItemClick(item);
-  };
+  }, [item, onItemClick]);
 
   return (
     <li>
@@ -11,6 +13,6 @@ function Item({ item, onItemClick }) {
       </button>
     </li>
   );
-}
+};
 
 export default Item;
