@@ -2,7 +2,7 @@
 
 ## Proposta
 
-<p>Executar o teste do Google Lighthouse no projeto “Lista de Pokémons” e apresentar os resultados da análise, tanto para Mobile quanto para Desktop
+<p>Executar o teste do Google Lighthouse no projeto “Lista de Pokémons” e apresentar os resultados da análise, tanto para Mobile quanto para Desktop.
  </p>
 <br />
 
